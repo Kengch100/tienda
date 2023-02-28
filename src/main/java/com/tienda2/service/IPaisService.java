@@ -2,17 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.tienda2.repository;
+package com.tienda2.service;
 
 import com.tienda2.entity.Pais;
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
+import java.util.List;
 
 /**
  *
  * @author Keng
  */
-@Repository
-public interface PersonaRepository extends CrudRepository<Pais, Long>{
-    
+public interface IPaisService {
+    public List<Pais> listCountry();
 }
